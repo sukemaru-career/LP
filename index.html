@@ -91,6 +91,17 @@ h1, h2 {
     text-decoration: none;
     font-weight: bold;
 }
+
+.sp-br {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sp-br {
+        display: block;
+    }
+}
+
 </style>
 
 </head>
@@ -100,8 +111,13 @@ h1, h2 {
 <!-- ファーストビュー -->
     
 <div class="hero">
-    <h1>20代のキャリアに、確かな道筋を。</h1>
-    <p>国家資格キャリアコンサルタントが無料でサポート</p>
+    <h1>20代のキャリアに、<span class="sp-br"></span>
+        確かな道筋を。
+    </h1>
+    <p>
+    国家資格キャリアコンサルタントが<span class="sp-br"></span>
+    無料でサポート
+    </p>
     <a href="https://lin.ee/Q0jwRjc" class="btn">無料で相談する（60分）</a>
 </div>
 
